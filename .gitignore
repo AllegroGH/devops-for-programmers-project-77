@@ -1,4 +1,9 @@
+# Terraform
 .terraform
 secret.*
 .vault-password
 TLS
+
+# Ansible
+inventory.ini
+secrets.yml
