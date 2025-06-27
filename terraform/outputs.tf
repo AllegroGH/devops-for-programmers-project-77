@@ -13,3 +13,7 @@ output "app_server_2_ip" {
 output "alb_external_ip" {
   value = yandex_vpc_address.devops3-alb-ip.external_ipv4_address[0].address
 }
+
+output "datadog_monitor_url" {
+  value = "https://app.datadoghq.eu/monitors/${datadog_monitor.HTTP_Check_2.id}"
+}
